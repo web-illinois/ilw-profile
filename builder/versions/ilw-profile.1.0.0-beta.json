@@ -5,10 +5,10 @@
     "type": "web component",
     "element-name": "ilw-profile",
     "description": "Description for builder.",
-    "version": "1.0.0-alpha",
+    "version": "1.0.0-beta",
     "date": "10/08/2024",
-    "css": "https://dev.toolkit.illinois.edu/ilw-profile/1.0.0-alpha/ilw-profile.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-profile/1.0.0-alpha/ilw-profile.js",
+    "css": "https://dev.toolkit.illinois.edu/ilw-profile/1.0.0-beta/ilw-profile.css",
+    "js": "https://dev.toolkit.illinois.edu/ilw-profile/1.0.0-beta/ilw-profile.js",
     "production": false,
     "notes": "",
     "parent-style": "",
@@ -21,19 +21,7 @@
     ],
     "attributes-fixed": [],
     "attributes-text": [],
-    "attributes": [
-        {
-            "name": "theme",
-            "description": "Color theme used",
-            "depreciated": false,
-            "values": [
-                "",
-                "blue",
-                "orange",
-                "white"
-            ]
-        }
-    ],
+    "attributes": [],
     "classes-fixed": [],
     "classes": [],
     "css-variables": [

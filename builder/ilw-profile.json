@@ -4,9 +4,9 @@
     "github": "https://github.com/web-illinois/ilw-profile/",
     "type": "web component",
     "element-name": "ilw-profile",
-    "description": "Description for builder.",
-    "purpose": "Imperative mood purpose for builder homepage.",
-    "toolkit-version": "",
+    "description": "A profile of a faculty, student, or staff member with contact information, biography, and other information.",
+    "purpose": "Person information",
+    "toolkit-version": "1.0.0-beta",
     "production-version": "",
-    "development-version": "1.0.0-alpha"
+    "development-version": "1.0.0-beta"
 }
