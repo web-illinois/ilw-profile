@@ -1,0 +1,21 @@
+ilw-profile p, ilw-profile h2, ilw-profile h3, ilw-profile h4, ilw-profile h5, ilw-profile h6, ilw-profile ul {
+    font-family: var(--il-font-sans);
+  }
+
+ilw-profile h1 {
+    font-family: var(--il-font-heading);
+  }
+
+
+  ilw-profile .ilw-profile--icon {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 21px auto;
+    column-gap: 14px;
+    margin-bottom: 15px;
+  }
+
+  ilw-profile .ilw-profile--icon p {
+    margin: 0;
+    padding: 0;
+  }

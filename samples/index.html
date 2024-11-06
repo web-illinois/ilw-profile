@@ -8,10 +8,148 @@
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
     <script type="module" src="/src/ilw-profile.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          const params = new URLSearchParams(window.location.search);
+          document.querySelectorAll("ilw-profile").forEach(component => {
+            if (params.has('theme')) {
+              component.setAttribute('theme', params.get('theme'));
+            }
+            if (params.has('width')) {
+              component.setAttribute('width', params.get('width'));
+            }
+            if (params.has('padding')) {
+              component.setAttribute('padding', params.get('padding'));
+            }
+            if (params.has('right')) {
+              component.setAttribute('right', true);
+            }
+            if (params.has('circle')) {
+              component.setAttribute('circle', true);
+            }
+          });
+        });
+      </script>
 </head>
 
 <body style="margin: 0; padding: 0;">
-<ilw-profile></ilw-profile>
+    <ilw-profile>
+        <h1 slot="name">Jane Smith</h1>
+        <p slot="title">Job Title, Department</p>
+        <img slot="image" src="photo.png" alt="Profile of Jane Smith">
+        <div slot="contact">
+            <div class="ilw-profile--icon">
+                <div></div>
+                <p>Curriculum & Instruction<br />
+                    110A Education<br />
+                    Champaign IL 61820</p>
+            </div>
+            <div class="ilw-profile--icon">
+                <div>icon</div>
+                <p>217-555-1000</p>
+            </div>
+            <div class="ilw-profile--icon">
+                <div>icon</div>
+                <p>M-F 8:00 AM - 5:00 PM In Office</p>
+            </div>
+        </div>
+        <div slot="left">
+            Left side content
+        </div>
+        <div>
+            <h2>Biography</h2>
+            <p>This statement can either be written in first person or third person. Third person is perhaps more formal and first person more casual and inviting. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+            <h2>Key Professional Appointments</h2>
+                <ul>
+                    <li>Interim Associate Dean, College of Education , University of Illinois, Urbana-Champaign</li>
+                    <li>Sheila M. Miller Professor, Curriculum and Instruction , University of Illinois, Urbana-Champaign </li>
+                    <li>Professor, Curriculum and Instruction , University of Illinois, Urbana-Champaign</li>
+                    <li>Professor, Center for Global Studies , University of Illinois, Urbana-Champaign</li>
+                    <li>Editorial activity , Research in the Teaching of English (Journal)</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Publications</summary>
+                <ul>
+                    <li><a href="https://doi.org/10.1016/j.lcsi.2024.100807  ">Munson, J., Baldinger, E. E., Altshuler,
+                            M., &amp; Lee, H. S. (2024). Side-by-side coaching: Decomposing a practice embedded teacher
+                            learning opportunity. Learning, Culture and Social Interaction, 45, 100807. </a></li>
+                    <li><a href="https://doi.org/10.1177/00317217211051144">Sherin, M. G., Richards, J., &amp;
+                            Altshuler, M. (2021). Learning from recording video of your own classroom. Phi Delta Kappan,
+                            103(2), 44-48. </a></li>
+                    <li><a href="https://doi.org/10.1016/j.lcsi.2021.100490">Richards, J., Altshuler, M., Sherin, B. L.,
+                            Sherin, M. G., &amp; Leatherwood, C. J. (2021). Complexities and opportunities in teachers'
+                            generation of videos from their own classrooms. Learning, Culture and Social Interaction,
+                            28, 100490.</a></li>
+                    <li><a
+                            href="https://theconversation.com/what-young-kids-say-worked-and-didnt-work-for-them-during-virtual-learning-167247">Altshuler,
+                            M. (2021, September 7). What young kids say worked – and didn’t work – for them during
+                            virtual learning. The Conversation. </a></li>
+                    <li>Altshuler, M. (2023). Math their way: Exploring child-initiated
+                        mathematics. In Lambert, T &amp; Moss, D. (Eds.), Proceedings of the forty-fifth annual meeting
+                        of the North American Chapter of the International Group for the Psychology of Mathematics
+                        Education, Vol 2., (pp. 163-167). University of Nevada, Reno.</li>
+                    <li>Altshuler, M. (2022). Exploring young children’s mathematics identity development. In Lischka,
+                        A. E., Dyer, E. B., Jones, R. S., Lovett, J., &amp; Down, S. (Eds.), Proceedings of the
+                        forty-fourth annual meeting of the North American Chapter of the International Group for the
+                        Psychology of Mathematics Education, (pp. 1713-1714 ). Nashville, TN: Middle Tennessee State
+                        University.</li>
+                    <li>Altshuler, M. &amp; Mason, E. N. (2021). Leveraging teachers’ complex perceptions of students.
+                        In Olanoff, D., Johnson, K., &amp; Spritzer, S. M. (Eds.), Proceedings of the forty-third annual
+                        meeting of the North American Chapter of The International Group for the Psychology of
+                        Mathematics Education (pp. 756-757). Philadelphia, PA.</li>
+                    <li>Munson, J., Altshuler, M., Baldinger, E. E., Lee, H. S., &amp; Kadiyali, V. (2021). Integrating
+                        three planes of teacher learning: The case of side-by-side coaching. In Olanoff, D., Johnson,
+                        K., &amp; Spritzer, S. M. (Eds.), Proceedings of the forty-third annual meeting of the North
+                        American Chapter of The International Group for the Psychology of Mathematics Education (pp.
+                        1849-1853). Philadelphia, PA.</li>
+                    <li><a href="https://repository.isls.org//handle/1/7499">Richards, J., Sherin, B. L., Altshuler, M.
+                            (2021). Teachers’ aesthetic judgments of classroom events. In de Vries, E., Hod, Y., &amp;
+                            Ahn, J. (Eds.) Proceedings of the 15th International Conference of the Learning Sciences -
+                            ICLS 2021 (pp. 43-50). International Society of the Learning Sciences. </a></li>
+                    <li><a href="https://repository.isls.org//handle/1/6698">Altshuler, M. (2020). How can you tell?:
+                            Unpacking evidence in teachers’ stories of math students. In Gresalfi, M. and Horn, I. S.
+                            (Eds.), The Interdisciplinarity of the Learning Sciences, 14th International Conference of
+                            the Learning Sciences (ICLS) 2020, Volume 1 (pp. 573-576). International Society of the
+                            Learning Sciences.</a></li>
+                    <li><a href="https://repository.isls.org//handle/1/6477">Richards, J., Altshuler, M., Sherin, B.,
+                            &amp; Sherin, M. (2020). Orchestrating for seeing: How teachers see and help others see
+                            student thinking when self-capturing classroom video. In Gresalfi, M. and Horn, I. S.
+                            (Eds.), The Interdisciplinarity of the Learning Sciences, 14th International Conference of
+                            the Learning Sciences (ICLS) 2020, Volume 4 (pp. 1942-1949). International Society of the
+                            Learning Sciences. </a></li>
+                    <li>Altshuler, M. (2019). Teachers’ storied perceptions of students as learners of math. In S.
+                        Otten, A. G. Candela, Z. de Araujo, C. Haines, &amp; C. Munter (Eds.), Proceedings of the
+                        forty-first annual meeting of the North American Chapter of the International Group for the
+                        Psychology of Mathematics Education (pp. 1758-1759). Stl Louis, MO: University of Missouri.</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Courses</summary>
+                <ul>
+                    <li><a href="#">CI 430: Teaching Children Mathematics:</a> Examines children's learning of
+                        mathematics and meaningful instructional methods, representations and materials. Emphasis given
+                        to number and operations (including both whole and rational numbers), number theory and
+                        statistics/probability. Includes laboratory experience with supervised problem solving. 3
+                        undergraduate hours. 3 graduate hours. Credit is not given for both CI 430 and CI 431.
+                        Prerequisite: MATH 103; admission to the Elementary Teacher Education Program.</li>
+                    <li><a href="#">CI 432: Investigative Approach to Elementary Mathematics Instruction:</a> Course
+                        will model and examine an investigative approach to elementary mathematics instruction, which is
+                        purposeful, inquiry-based, and meaningful mathematics instruction. Particular focus will be
+                        given to the teaching and learning of measurement, geometry and algebra/functions. 3
+                        undergraduate hours. 3 graduate hours. Prerequisite: CI 430 or CI 431; admission to the
+                        Elementary Teacher Education Program.</li>
+                    <li><a href="#">CI 443: Mathematics in Early Childhood Education:</a> Focuses on the teaching of
+                        foundational mathematical concepts in prekindergarten, kindergarten, and the primary grades.
+                        Pre-service teachers will learn the value of "mathematizing" the worlds of children and creating
+                        authentic experiences through which children learn key mathematics concepts. 3 undergraduate
+                        hours. 3 graduate hours. Prerequisite: Completed or concurrent enrollment in general education
+                        requirements in mathematics or equivalent, admission to the Early Childhood Teacher Education
+                        Program.</li>
+                </ul>
+            </details>
+        </div>
+    </ilw-profile>
 </body>
 
 </html>
