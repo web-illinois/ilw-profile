@@ -5,6 +5,7 @@
     "type": "web component",
     "element-name": "ilw-profile",
     "description": "A profile of a faculty, student, or staff member with contact information, biography, and other information.",
+    "builder-version": "1.0",
     "version": "1.0.0",
     "date": "10/08/2024",
     "css": "https://cdn.toolkit.illinois.edu/ilw-profile/1.0.0/ilw-profile.css",
