@@ -6,29 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Component</title>
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
-    <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+    <link rel="stylesheet" href="https://cdn.toolkit.illinois.edu/ilw-global/3/ilw-global.css">
     <script type="module" src="/src/ilw-profile.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-          const params = new URLSearchParams(window.location.search);
-          document.querySelectorAll("ilw-profile").forEach(component => {
-            if (params.has('theme')) {
-              component.setAttribute('theme', params.get('theme'));
-            }
-            if (params.has('width')) {
-              component.setAttribute('width', params.get('width'));
-            }
-            if (params.has('padding')) {
-              component.setAttribute('padding', params.get('padding'));
-            }
-            if (params.has('right')) {
-              component.setAttribute('right', true);
-            }
-            if (params.has('circle')) {
-              component.setAttribute('circle', true);
-            }
-          });
+      let componentName = 'ilw-profile';
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const params = new URLSearchParams(window.location.search);
+        document.querySelectorAll(componentName).forEach(component => {
+          for (const key of params.keys()) {
+            component.setAttribute(key, params.get(key));
+          }
         });
+      });
       </script>
 </head>
 

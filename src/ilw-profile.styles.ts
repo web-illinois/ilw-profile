@@ -22,9 +22,6 @@ export default css`
         margin: 0 var(--ilw-margin--side, 0);
     }
 
-.profile-outer.gray {
-    background-color: var(--il-storm-lighter-4);
-}
 .profile .left-image {
     grid-area: 1 / 1 / span 2 / auto;
 }
