@@ -17,7 +17,7 @@
             "require": "./dist/ilw-profile.cjs",
             "default": "./dist/ilw-profile.js"
         },
-        "./ilw-filter.css": {
+        "./ilw-profile.css": {
             "import": "./dist/ilw-profile.css"
         }
     },
