@@ -1,11 +1,12 @@
 ilw-profile p, ilw-profile h2, ilw-profile h3, ilw-profile h4, ilw-profile h5, ilw-profile h6, ilw-profile ul {
     font-family: var(--il-font-sans);
+    color: var(--ilw-color--heading);
   }
 
 ilw-profile h1 {
     font-family: var(--il-font-heading);
+    color: var(--ilw-color--heading);
   }
-
 
   ilw-profile .ilw-profile--icon {
     display: grid;
@@ -18,4 +19,24 @@ ilw-profile h1 {
   ilw-profile .ilw-profile--icon p {
     margin: 0;
     padding: 0;
+  }
+
+  ilw-profile {
+    background-color: var(--ilw-color--background);
+    color: var(--ilw-color--text);
+    display: block;
+  }
+
+  ilw-profile a {
+    color: var(--ilw-color--link);
+  }
+
+  ilw-profile a:hover {
+    color: var(--ilw-color--link-hover);
+  }
+
+  ilw-profile a:focus {
+    color: var(--ilw-color--focus--text);
+    background: var(--ilw-color--focus--background);
+    outline: var(--ilw-color--focus--outline);
   }

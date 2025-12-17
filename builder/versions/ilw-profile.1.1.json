@@ -1,0 +1,80 @@
+{
+    "title": "Profile",
+    "tag": "ilw-profile",
+    "github": "https://github.com/web-illinois/ilw-profile/",
+    "type": "web component",
+    "element-name": "ilw-profile",
+    "description": "A profile of a faculty, student, or staff member with contact information, biography, and other information.",
+    "builder-version": "1.1",
+    "version": "1.1.0",
+    "date": "10/08/2024",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-profile/1.1/ilw-profile.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-profile/1.1/ilw-profile.js",
+    "production": false,
+    "notes": "",
+    "parent-style": "",
+    "samples": [
+        {
+            "name": "default",
+            "description": "Default information",
+            "text": " <h1 slot='name'>Jane Smith</h1> <p slot='title'>Job Title, Department</p> <img slot='image' src='https://picsum.photos/350' alt='Profile of Jane Smith'> <div slot='contact'> <div class='ilw-profile--icon'> <div>icon</div> <p>Curriculum & Instruction<br /> 110A Education<br /> Champaign IL 61820</p> </div> <div class='ilw-profile--icon'> <div>icon</div> <p>217-555-1000</p> </div> <div class='ilw-profile--icon'> <div>icon</div> <p>M-F 8:00 AM - 5:00 PM In Office</p> </div> </div> <div slot='left'> Left side content </div> <div> <h2>Biography</h2> <p>This statement can either be written in first person or third person. Third person is perhaps more formal and first person more casual and inviting. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p> <h2>Key Professional Appointments</h2> <ul> <li>Interim Associate Dean, College of Education , University of Illinois, Urbana-Champaign</li> <li>Sheila M. Miller Professor, Curriculum and Instruction , University of Illinois, Urbana-Champaign </li> <li>Professor, Curriculum and Instruction , University of Illinois, Urbana-Champaign</li> <li>Professor, Center for Global Studies , University of Illinois, Urbana-Champaign</li> <li>Editorial activity , Research in the Teaching of English (Journal)</li> </ul> </div> "
+        },
+        {
+            "name": "minimal",
+            "description": "Minimal information",
+            "text": " <h1 slot='name'>Jane Smith</h1> <p slot='title'>Job Title, Department</p> <img slot='image' src='https://picsum.photos/350' alt='Profile of Jane Smith'> <div slot='contact'> <div class='ilw-profile--icon'> <div>icon</div> <p>Curriculum & Instruction<br /> 110A Education<br /> Champaign IL 61820</p> </div> <div class='ilw-profile--icon'> <div>icon</div> <p>217-555-1000</p> </div> <div class='ilw-profile--icon'> <div>icon</div> <p>M-F 8:00 AM - 5:00 PM In Office</p> </div> </div> "
+        }
+    ],
+    "attributes-fixed": [],
+    "attributes-text": [
+        {
+            "name": "padding",
+            "description": "Padding of the text inside the component",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
+    "attributes": [
+        {
+            "name": "theme",
+            "description": "Color theme used",
+            "depreciated": false,
+            "values": [
+                "",
+                "gray"
+            ]
+        },
+        {
+            "name": "width",
+            "description": "Width of component",
+            "depreciated": false,
+            "values": [
+                "",
+                "full",
+                "auto",
+                "page"
+            ]
+        },
+        {
+            "name": "circle",
+            "description": "Whether or not to use a circle image",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
+            ]
+        },
+        {
+            "name": "right",
+            "description": "whether or not to put all information to the right",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
+            ]
+        }
+    ],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": []
+}

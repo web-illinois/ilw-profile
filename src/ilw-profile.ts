@@ -1,19 +1,26 @@
 import { LitElement, html } from 'lit';
+// @ts-ignore
 import styles from './ilw-profile.styles';
 import './ilw-profile.css';
 
-class Profile extends LitElement {
+ import { customElement, property, query, state } from "lit/decorators.js";
+@customElement('ilw-profile')
+export default class Profile extends LitElement {
 
-    static get properties() {
-        return {
-            theme: { type: String, attribute: true },
-            right: { type: Boolean, attribute: true },
-            circle: { type: Boolean, attribute: true },
-            width: { type: String, attribute: true },
-            padding: { type: String, attribute: true },
-            right_private: { type: Boolean, attribute: false }
-        };
-    }
+    @property({type: String}) 
+    theme: "white" | "gray" | "orange" | "blue" | "orange-gradient" | "blue-gradient" = "white";
+
+    @property({type: Boolean}) 
+    right: boolean = false;
+
+    @property({type: Boolean}) 
+    circle: boolean = false;
+    @property({type: String}) 
+    width: string = "";
+    @property({type: String}) 
+    padding: string = "";
+    @property({type: Boolean}) 
+    right_private: boolean = false;
 
     static get styles() {
         return styles;
@@ -21,7 +28,6 @@ class Profile extends LitElement {
 
     constructor() {
         super();
-        this.theme = '';
         this.circle = false;
         this.right = false;
         this.width = '';
@@ -41,8 +47,8 @@ class Profile extends LitElement {
         return this.width == 'auto' || this.width == 'page' ? 'fixed' : '';
     }
 
-    handleSlotchange(e) {
-        this.right_private = e.target.assignedElements({ flatten: true }).length == 0;
+    handleSlotchange(e: Event) {
+        this.right_private = (e.target as HTMLSlotElement).assignedElements({ flatten: true }).length == 0;
     }
 
     render() {
@@ -70,4 +76,8 @@ class Profile extends LitElement {
     }
 }
 
-customElements.define('ilw-profile', Profile);
+declare global {
+interface HTMLElementTagNameMap {
+    "ilw-profile": Profile;
+  }
+}
