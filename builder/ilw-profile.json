@@ -1,12 +1,21 @@
 {
-    "title": "Profile",
-    "tag": "ilw-profile",
-    "github": "https://github.com/web-illinois/ilw-profile/",
-    "type": "web component",
-    "element-name": "ilw-profile",
-    "description": "A profile of a faculty, student, or staff member with contact information, biography, and other information.",
-    "purpose": "Person information",
-    "toolkit-version": "1.0",
-    "production-version": "1.1",
-    "development-version": "1.0"
+  "title": "Profile",
+  "id": "ilw-profile",
+  "type": "Web Component",
+  "repository-name": "ilw-profile",
+  "description": "Present a detailed faculty, staff, or student profile with a photo, contact information, biography, and related details.",
+  "purpose": "Person information",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.0"
+    }
+  ]
 }
